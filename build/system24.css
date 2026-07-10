@@ -638,17 +638,14 @@ body {
 
 
 
-/* Solo gli avatar */
+/* Rende tondi solo gli avatar */
+
+[class*="avatar"],
 [class*="avatar"] img,
-[class*="avatar"] foreignObject,
 [class*="avatar"] svg,
-[class*="avatar"] {
+[class*="avatar"] foreignObject {
     border-radius: 50% !important;
     overflow: hidden !important;
-}
-[class*="avatarDecoration"] {
-    border-radius: 0 !important;
-    overflow: visible !important;
 }
 
 
