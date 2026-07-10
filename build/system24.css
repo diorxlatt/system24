@@ -525,6 +525,13 @@ body {
         mask: none;
     }
 */
+
+.mask__68edb > foreignObject,
+.svg__44b0c > foreignObject,
+.svg__2338f > foreignObject {
+    mask: url(#svg-mask-avatar-default) !important;
+}
+    
     .wrapper__44b0c,
     .container__1ce5d {
         --online-2: #43a25a;
@@ -646,33 +653,19 @@ body {
 
 
 
-/* ===== FIX ONLY USER AVATARS ROUND ===== */
+/* Avatar rotondi senza toccare le decorazioni */
 
-/* riabilita la maschera avatar Discord */
-[class^="avatar_"],
-[class*=" avatar_"] {
+.avatar__44b0c,
+.avatar__20a53,
+img[class*="avatar"] {
     border-radius: 50% !important;
     overflow: hidden !important;
 }
 
-/* immagine avatar */
-[class^="avatar_"] img,
-[class*=" avatar_"] img {
-    border-radius: 50% !important;
-    clip-path: circle(50%) !important;
-}
-
-/* wrapper Discord */
-[class*="wrapper_"] > svg,
-[class*="wrapper_"] > svg > foreignObject,
-[class*="wrapper_"] foreignObject {
-    border-radius: 50% !important;
-}
-
-/* evita che la decoration venga tagliata */
+.avatarDecoration__44b0c,
+.avatarDecoration__20a53,
 [class*="avatarDecoration"] {
-    clip-path: none !important;
-    overflow: visible !important;
+    border-radius: 0 !important;
 }
 
 
