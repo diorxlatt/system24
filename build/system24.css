@@ -518,22 +518,13 @@ body {
     .avatar__20a53 .status_a423bd {
         display: none;
     }
-
+/*
     .mask__68edb > foreignObject,
     .svg__44b0c > foreignObject,
     .svg__2338f > foreignObject {
         mask: none;
     }
-
-/*
-.mask__68edb > foreignObject,
-.svg__44b0c > foreignObject,
-.svg__2338f > foreignObject {
-    mask: url(#svg-mask-avatar-default) !important;
-}
-
 */
-       
     .wrapper__44b0c,
     .container__1ce5d {
         --online-2: #43a25a;
@@ -650,11 +641,6 @@ body {
         background-size: 8px 8px;
         border-color: var(--checkbox-border-selected-default);
     }
-
-
-
-
-
 /* Avatar rotondi senza toccare le decorazioni */
 
 /* SOLO l'immagine dell'avatar è tonda */
@@ -670,9 +656,4 @@ img[class*="avatar_"] {
     border-radius: 0 !important;
 }
 
-
-
-
-
-    
 }
