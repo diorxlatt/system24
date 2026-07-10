@@ -655,12 +655,12 @@ img[class*="avatar"] {
 [class*="avatarDecoration"] {
     border-radius: 0 !important;
 }
-    /* I banner restano quadrati */
+/* Banner sempre quadrati */
 
 [class*="banner"],
 [class*="profileBanner"],
-.banner__68edb,
-.profileBanner__68edb {
+[class*="banner"] img,
+[class*="profileBanner"] img {
     border-radius: 0 !important;
 }
 }
