@@ -638,22 +638,15 @@ body {
 
 
 
-/* Avatar tondi, senza toccare le decorazioni */
-
-.avatar_c19a55,
-.avatar__44b0c,
-.avatar__20a53,
-.wrapper__44b0c,
-.wrapper__1fd839,
-foreignObject {
+/* Solo gli avatar */
+[class*="avatar"] img,
+[class*="avatar"] foreignObject,
+[class*="avatar"] svg,
+[class*="avatar"] {
     border-radius: 50% !important;
     overflow: hidden !important;
 }
-
-.avatarDecoration_c19a55,
-.avatarDecoration__44b0c,
-.avatarDecoration__991e2,
-.avatarDecorationHint_f89da9 {
+[class*="avatarDecoration"] {
     border-radius: 0 !important;
     overflow: visible !important;
 }
