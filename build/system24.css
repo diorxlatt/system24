@@ -655,14 +655,6 @@ img[class*="avatar_"] {
 [class*="avatarDecoration"] {
     border-radius: 0 !important;
 }
-/* Rimuove gli angoli arrotondati del profilo */
 
-[class*="userProfileOuter"],
-[class*="userProfileInner"],
-[class*="profileBanner"],
-[class*="banner"] {
-    border-radius: 0 !important;
-    overflow: visible !important;
-}
 }
 
