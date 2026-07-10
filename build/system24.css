@@ -655,12 +655,15 @@ img[class*="avatar_"] {
 [class*="avatarDecoration"] {
     border-radius: 0 !important;
 }
-/* Ripristina le icone nella pagina dei Boost */
+/* Ripristina completamente gli SVG dei Boost */
 
-.perksModalContent__4dca,
-[class*="perksModal"] svg *,
-[class*="guildBoost"] svg * {
-    display: initial !important;
+[class*="perks"] svg rect,
+[class*="perks"] svg circle,
+[class*="perks"] svg g,
+[class*="guildBoost"] svg rect,
+[class*="guildBoost"] svg circle,
+[class*="guildBoost"] svg g {
+    display: unset !important;
 }
 }
 
