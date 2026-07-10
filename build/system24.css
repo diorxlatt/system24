@@ -643,11 +643,11 @@ body {
     }
 /* Avatar rotondi senza toccare le decorazioni */
 
-.avatar__44b0c,
-.avatar__20a53,
-img[class*="avatar"] {
+/* SOLO l'immagine dell'avatar è tonda */
+
+img[class*="avatar-"],
+img[class*="avatar_"] {
     border-radius: 50% !important;
-    overflow: hidden !important;
 }
 
 .avatarDecoration__44b0c,
