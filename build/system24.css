@@ -527,7 +527,7 @@ body {
 */
 
 .mask__68edb > foreignObject,
-.svg__44b0c > foreignObject,
+
 .svg__2338f > foreignObject {
     mask: url(#svg-mask-avatar-default) !important;
 }
@@ -661,26 +661,6 @@ img[class*="avatar_"] {
 .avatarDecoration__44b0c,
 .avatarDecoration__20a53,
 [class*="avatarDecoration"] {
-    border-radius: 0 !important;
-}
-
-/* Banner profili Discord quadrati */
-
-[class*="banner"],
-[class*="profileBanner"],
-[class*="userPopoutInner"],
-[class*="profilePanel"] {
-    border-radius: 0 !important;
-}
-
-[class*="banner"] img,
-[class*="profileBanner"] img {
-    border-radius: 0 !important;
-    clip-path: none !important;
-}
-
-/* Rimuove eventuali maschere arrotondate */
-[class*="mask"] {
     border-radius: 0 !important;
 }
 
