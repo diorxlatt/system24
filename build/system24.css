@@ -638,22 +638,52 @@ body {
 
 
 
-/* Avatar tondi, decorazioni invariate */
-.avatar_c19a55,
+/* ==========================================
+   RESTORE DISCORD ROUND AVATARS ONLY
+   Midnight unrounding fix
+   ========================================== */
+
+/* avatar principale nei messaggi */
+.avatar__44b0c,
 .avatar__20a53,
-.wrapper__44b0c,
-.wrapper__44b0c img,
-.wrapper__44b0c svg,
-.wrapper__44b0c foreignObject {
+.avatar__75742,
+[class*="avatar_"] {
     border-radius: 50% !important;
     overflow: hidden !important;
 }
 
-/* Mantieni le decorazioni avatar non ritagliate */
-.avatarDecoration__44b0c,
-.avatarDecorationHint__44b0c,
-.avatarDecoration_a0 {
-    border-radius: 0 !important;
+/* immagine vera dell'avatar */
+[class*="avatar_"] > img,
+[class*="avatar_"] img {
+    border-radius: 50% !important;
+    object-fit: cover !important;
+}
+
+
+/* ripristina il contenitore SVG/mask di Discord */
+[class*="avatar_"] svg {
+    border-radius: 50% !important;
+}
+
+
+/* NON applicare il taglio alle decorazioni */
+[class*="avatarDecoration"] {
+    border-radius: initial !important;
+    overflow: visible !important;
+}
+
+
+/* membri nella lista destra */
+[class*="member_"] [class*="avatar_"],
+[class*="member_"] [class*="avatar_"] img {
+    border-radius: 50% !important;
+}
+
+
+/* profilo in basso a sinistra */
+[class*="panels"] [class*="avatar_"],
+[class*="panels"] [class*="avatar_"] img {
+    border-radius: 50% !important;
 }
 
 
