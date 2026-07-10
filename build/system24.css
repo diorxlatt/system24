@@ -525,12 +525,12 @@ body {
         mask: none;
     }
 */
-/*
+
 .mask__68edb > foreignObject,
 .svg__44b0c > foreignObject,
 .svg__2338f > foreignObject {
     mask: url(#svg-mask-avatar-default) !important;
-}*/
+}
 
     
     .wrapper__44b0c,
