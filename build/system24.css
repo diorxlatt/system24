@@ -510,18 +510,20 @@ body {
         --radius-round: 0px !important;
     }
 
-.svg_cc5dd2 > mask,
-.svg__44b0c > rect,
-.svg__44b0c > circle,
-.svg__44b0c > g,
-.svg__44b0c rect[mask='url(#:rhi:)'] {
-    display: none;
-}
+    .svg_cc5dd2 > mask,
+    .svg__44b0c > rect,
+    .svg__44b0c > circle,
+    .svg__44b0c > g,
+    .svg__44b0c rect[mask='url(#:rhi:)'],
+    .avatar__20a53 .status_a423bd {
+        display: none;
+    }
 
-/* NON nascondere la maschera avatar */
-.avatar__20a53 .status_a423bd {
-    display: block;
-}
+    .mask__68edb > foreignObject,
+    .svg__44b0c > foreignObject,
+    .svg__2338f > foreignObject {
+        mask: none;
+    }
 
     .wrapper__44b0c,
     .container__1ce5d {
@@ -642,53 +644,39 @@ body {
 
 
 
-/* ==========================================
-   RESTORE DISCORD ROUND AVATARS ONLY
-   Midnight unrounding fix
-   ========================================== */
 
-/* avatar principale nei messaggi */
-.avatar__44b0c,
-.avatar__20a53,
-.avatar__75742,
-[class*="avatar_"] {
+
+/* ===== FIX ONLY USER AVATARS ROUND ===== */
+
+/* riabilita la maschera avatar Discord */
+[class^="avatar_"],
+[class*=" avatar_"] {
     border-radius: 50% !important;
     overflow: hidden !important;
 }
 
-/* immagine vera dell'avatar */
-[class*="avatar_"] > img,
-[class*="avatar_"] img {
+/* immagine avatar */
+[class^="avatar_"] img,
+[class*=" avatar_"] img {
     border-radius: 50% !important;
-    object-fit: cover !important;
+    clip-path: circle(50%) !important;
 }
 
-
-/* ripristina il contenitore SVG/mask di Discord */
-[class*="avatar_"] svg {
+/* wrapper Discord */
+[class*="wrapper_"] > svg,
+[class*="wrapper_"] > svg > foreignObject,
+[class*="wrapper_"] foreignObject {
     border-radius: 50% !important;
 }
 
-
-/* NON applicare il taglio alle decorazioni */
+/* evita che la decoration venga tagliata */
 [class*="avatarDecoration"] {
-    border-radius: initial !important;
+    clip-path: none !important;
     overflow: visible !important;
 }
 
 
-/* membri nella lista destra */
-[class*="member_"] [class*="avatar_"],
-[class*="member_"] [class*="avatar_"] img {
-    border-radius: 50% !important;
-}
 
-
-/* profilo in basso a sinistra */
-[class*="panels"] [class*="avatar_"],
-[class*="panels"] [class*="avatar_"] img {
-    border-radius: 50% !important;
-}
 
 
     
