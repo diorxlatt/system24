@@ -1,5 +1,5 @@
 /* main.css */
-@import url('https://diorxlatt.github.io/midnight-discord/build/midnight.css');
+@import url('https://refact0r.github.io/midnight-discord/build/midnight.css');
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
 @font-face {
@@ -8,7 +8,7 @@
     font-weight: 400;
     src:
         local('asciid'),
-        url('https://diorxlatt.github.io/system24/assets/asciid.woff') format('woff');
+        url('https://refact0r.github.io/system24/assets/asciid.woff') format('woff');
 }
 
 body {
@@ -641,6 +641,9 @@ body {
         background-size: 8px 8px;
         border-color: var(--checkbox-border-selected-default);
     }
+
+
+
 /* Avatar rotondi senza toccare le decorazioni */
 
 .avatar__44b0c,
@@ -655,5 +658,7 @@ img[class*="avatar"] {
 [class*="avatarDecoration"] {
     border-radius: 0 !important;
 }
-}
 
+
+    
+}
