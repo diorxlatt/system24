@@ -644,11 +644,10 @@ body {
 
 
 
-/* Rende rotonda solo l'immagine dell'avatar */
+/* SOLO l'immagine dell'avatar è tonda */
 
-img[class*="avatar"],
-.avatar__44b0c img,
-.avatar__20a53 img {
+img[class*="avatar-"],
+img[class*="avatar_"] {
     border-radius: 50% !important;
 }
 
