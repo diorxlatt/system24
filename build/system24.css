@@ -655,6 +655,22 @@ img[class*="avatar_"] {
 [class*="avatarDecoration"] {
     border-radius: 0 !important;
 }
+/* Ripristina icone Server Boost */
 
+[class*="perk"],
+[class*="boost"],
+[class*="tier"],
+[class*="guildBoost"],
+[class*="benefit"] svg,
+[class*="guildBoost"] svg {
+    display: block !important;
+}
+
+[class*="perk"] svg *,
+[class*="boost"] svg *,
+[class*="tier"] svg *,
+[class*="guildBoost"] svg * {
+    display: initial !important;
+}
 }
 
