@@ -655,8 +655,8 @@ img[class*="avatar_"] {
 [class*="avatarDecoration"] {
     border-radius: 0 !important;
 }
-/* Pallino verde quando si parla in vocale */
-.panels__5e434 [class*="wrapper"]::after {
+.wrapper__44b0c:has(rect)::after,
+.container__1ce5d:has(.status_a423bd)::after {
     border-radius: 50% !important;
 }
 }
