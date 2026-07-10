@@ -655,19 +655,6 @@ img[class*="avatar_"] {
 [class*="avatarDecoration"] {
     border-radius: 0 !important;
 }
-/* Fix icone boost server Discord con Midnight unrounding */
 
-[class*="guildBoost"] svg,
-[class*="perk"] svg,
-[class*="tier"] svg {
-    visibility: visible !important;
-    display: block !important;
-}
-
-[class*="guildBoost"] svg mask,
-[class*="perk"] svg mask,
-[class*="tier"] svg mask {
-    display: block !important;
-}
 }
 
