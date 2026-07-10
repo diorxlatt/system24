@@ -655,5 +655,13 @@ img[class*="avatar"] {
 [class*="avatarDecoration"] {
     border-radius: 0 !important;
 }
+    /* I banner restano quadrati */
+
+[class*="banner"],
+[class*="profileBanner"],
+.banner__68edb,
+.profileBanner__68edb {
+    border-radius: 0 !important;
+}
 }
 
