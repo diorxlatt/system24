@@ -655,10 +655,11 @@ body {
 
 /* Avatar rotondi senza toccare le decorazioni */
 
-/* SOLO l'immagine dell'avatar è tonda */
+/* Solo la foto profilo */
 
-img[class*="avatar-"],
-img[class*="avatar_"] {
+.avatar__44b0c > img,
+.avatar__20a53 > img,
+.avatarStack__44b0c img {
     border-radius: 50% !important;
 }
 
