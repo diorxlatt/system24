@@ -641,20 +641,31 @@ body {
         background-size: 8px 8px;
         border-color: var(--checkbox-border-selected-default);
     }
-/* Avatar rotondi senza toccare le decorazioni */
+/* Tutti gli avatar tornano rotondi */
 
-/* SOLO l'immagine dell'avatar è tonda */
-
-img[class*="avatar-"],
-img[class*="avatar_"] {
+/* Avatar nei messaggi, membri, DM, profilo, popup */
+[class*="avatar"] {
     border-radius: 50% !important;
+    overflow: hidden !important;
 }
 
-.avatarDecoration__44b0c,
-.avatarDecoration__20a53,
+/* Avatar nella barra utente in basso a sinistra */
+[class*="panels"] [class*="avatar"] {
+    border-radius: 50% !important;
+    overflow: hidden !important;
+}
+
+/* Avatar dei partecipanti in chiamata vocale */
+[class*="voice"] [class*="avatar"],
+[class*="call"] [class*="avatar"] {
+    border-radius: 50% !important;
+    overflow: hidden !important;
+}
+
+/* Le decorazioni restano inalterate */
 [class*="avatarDecoration"] {
     border-radius: 0 !important;
+    overflow: visible !important;
 }
-
 }
 
