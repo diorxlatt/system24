@@ -638,14 +638,22 @@ body {
 
 
 
-/* Rende tondi solo gli avatar */
-
-[class*="avatar"],
-[class*="avatar"] img,
-[class*="avatar"] svg,
-[class*="avatar"] foreignObject {
+/* Avatar tondi, decorazioni invariate */
+.avatar_c19a55,
+.avatar__20a53,
+.wrapper__44b0c,
+.wrapper__44b0c img,
+.wrapper__44b0c svg,
+.wrapper__44b0c foreignObject {
     border-radius: 50% !important;
     overflow: hidden !important;
+}
+
+/* Mantieni le decorazioni avatar non ritagliate */
+.avatarDecoration__44b0c,
+.avatarDecorationHint__44b0c,
+.avatarDecoration_a0 {
+    border-radius: 0 !important;
 }
 
 
