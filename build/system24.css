@@ -644,12 +644,24 @@ body {
 
 
 
-/* Solo la foto profilo */
+/* Avatar tondi, senza toccare le decorazioni */
 
-.avatar__44b0c > img,
-.avatar__20a53 > img,
-.avatarStack__44b0c img {
+.avatar_c19a55,
+.avatar__44b0c,
+.avatar__20a53,
+.wrapper__44b0c,
+.wrapper__1fd839,
+foreignObject {
     border-radius: 50% !important;
+    overflow: hidden !important;
+}
+
+.avatarDecoration_c19a55,
+.avatarDecoration__44b0c,
+.avatarDecoration__991e2,
+.avatarDecorationHint_f89da9 {
+    border-radius: 0 !important;
+    overflow: visible !important;
 }
 
 
