@@ -664,4 +664,26 @@ img[class*="avatar_"] {
     border-radius: 0 !important;
 }
 
+/* Banner profili Discord quadrati */
+
+[class*="banner"],
+[class*="profileBanner"],
+[class*="userPopoutInner"],
+[class*="profilePanel"] {
+    border-radius: 0 !important;
+}
+
+[class*="banner"] img,
+[class*="profileBanner"] img {
+    border-radius: 0 !important;
+    clip-path: none !important;
+}
+
+/* Rimuove eventuali maschere arrotondate */
+[class*="mask"] {
+    border-radius: 0 !important;
+}
+
+
+    
 }
