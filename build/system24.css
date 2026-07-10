@@ -655,13 +655,14 @@ img[class*="avatar"] {
 [class*="avatarDecoration"] {
     border-radius: 0 !important;
 }
-/* Banner sempre quadrati */
+/* Rimuove gli angoli arrotondati del profilo */
 
-[class*="banner"],
+[class*="userProfileOuter"],
+[class*="userProfileInner"],
 [class*="profileBanner"],
-[class*="banner"] img,
-[class*="profileBanner"] img {
+[class*="banner"] {
     border-radius: 0 !important;
+    overflow: visible !important;
 }
 }
 
