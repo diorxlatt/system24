@@ -655,6 +655,13 @@ img[class*="avatar_"] {
 [class*="avatarDecoration"] {
     border-radius: 0 !important;
 }
+/* Indicatore voce attiva nel pannello utente - solo quello */
+.panels__5e434 .wrapper__44b0c::after {
+    border-radius: 50% !important;
+}
 
+.panels__5e434 .wrapper__44b0c:has(rect)::after {
+    border-radius: 50% !important;
+}
 }
 
